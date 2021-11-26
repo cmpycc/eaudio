@@ -1,0 +1,18 @@
+{
+    "name": "cmpy.Audio.Editor",
+    "rootNamespace": "cmpy.Audio",
+    "references": [
+        "GUID:2abdf541e49b6d14f997cc358dc1df74"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
