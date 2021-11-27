@@ -22,7 +22,6 @@ namespace cmpy.Audio
         private List<AudioSource> sourcePool;
         private Transform audioParent;
         private GameObject templateObject;
-        private object templateAudioSource;
 
         private void Awake()
         {
@@ -61,14 +60,14 @@ namespace cmpy.Audio
                         {
                             try
                             {
-                                property.SetValue(templateAudioSource, property.GetValue(foundAudioSource, null), null);
+                                property.SetValue(templateSource, property.GetValue(foundAudioSource));
                             }
                             catch (NotImplementedException) { }
                         }
                     }
 
                     // Set the fields.
-                    foreach (FieldInfo field in type.GetFields(flags)) field.SetValue(templateAudioSource, field.GetValue(foundAudioSource));
+                    foreach (FieldInfo field in type.GetFields(flags)) field.SetValue(templateSource, field.GetValue(foundAudioSource));
                 }
             }
         }
