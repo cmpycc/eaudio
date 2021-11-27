@@ -32,7 +32,7 @@ namespace cmpy.Audio
             audioParent.localPosition = Vector3.zero;
             audioParent.rotation = Quaternion.identity;
             audioParent.localScale = Vector3.one;
-            audioParent.hideFlags = HideFlags.HideAndDontSave;
+            audioParent.gameObject.hideFlags = HideFlags.HideAndDontSave;
 
             templateObject = new GameObject(Application.isEditor ? "AUDIO TEMPLATE" : "");
             templateObject.transform.SetParent(audioParent, false);
