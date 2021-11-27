@@ -27,7 +27,8 @@ namespace cmpy.Audio
     public class SoundEffect : ScriptableObject
     {
         public AudioClip[] clips = new AudioClip[0];
-        public ClipSelectionType selectionType = ClipSelectionType.Unique; private int lastClipIndex = -1; // Only used for the Sequential and Unique selection types.
+        public ClipSelectionType selectionType = ClipSelectionType.Unique;
+        private int lastClipIndex = -1; // Only used for the Sequential and Unique selection types.
 
         public bool randomizeVolume = false;
         public float volumeBase = 1f;
